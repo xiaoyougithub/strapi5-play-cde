@@ -53,28 +53,6 @@ $RECYCLE.BIN/
 
 
 ############################
-# System and Version Control Files
-############################
-
-.git/
-.DS_Store
-Thumbs.db
-.nfs*
-*~
-Icon
-.Spotlight-V100
-.Trashes
-._*
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-*.cab
-*.msi
-*.msm
-*.msp
-
-
-############################
 # Packages
 ############################
 
@@ -92,16 +70,6 @@ $RECYCLE.BIN/
 *.class
 *.dll
 *.exe
-*.o
-*.seed
-*.so
-*.swo
-*.swp
-*.swn
-*.swm
-*.out
-*.pid
-
 ############################
 # Dependencies and Build Artifacts
 ############################
@@ -113,22 +81,23 @@ env/
 venv/
 vendor/
 cython_debug/
+core.*
 *.dll
 *.o
 *.so
-*.swo
-*.swp
-*.swn
-*.swm
-*.out
-*.ex
-*.pid
-
 ############################
 # Logs, Temporary, and Backup Files
 ############################
 
-.tmp
+*.log
+*.tmp
+*.bak
+*.old
+*.pid
+*.seed
+*.pid.lock
+
+*.tmp
 *.log
 *.sql
 *.sqlite
@@ -137,15 +106,6 @@ cython_debug/
 *.sql-journal
 *.log
 *.pid.lock
-
-*.tmp
-*.log
-*.bak
-*.old
-*.pid
-*.seed
-*.pid.lock
-
 
 
 
@@ -161,12 +121,6 @@ public/uploads/*
 !public/uploads/.gitkeep
 .eslintcache
 **/__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-.Python
-*.env
-
 ############################
 # JavaScript/TypeScript
 ############################
@@ -226,9 +180,6 @@ yarn-error.log
 # Tests
 ############################
 
-coverage
-
-
 ############################
 # Environment and Configuration Files
 ############################
@@ -238,7 +189,6 @@ coverage
 *.env.development.local
 *.env.test.local
 *.env.production.local
-*.env
 .Python
 
 
@@ -254,3 +204,4 @@ build
 build/
 .strapi-updater.json
 .strapi-cloud.json
+.tmp
